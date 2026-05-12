@@ -2,19 +2,19 @@
 <html>
     <body>
         <div>
-            <h1>sup kids, Volumetric Thermal Expansion</h1>
+            <h1>Volumetric Thermal Expansion</h1>
             <div id="model"></div>
             <div id="inputTemp">
-                <label>heres the temperature kids (°C)</label>
-                <input type="range" id="expansionTemp" min="0" max="150" value="0">
-                <input type="number" id="expansionTempNum" min="0" max="150" value="0">
+                <label>Temperature (°C)</label>
+                <input type="range" id="expTemp" min="0" max="300" value="0">
+                <input type="number" id="expTempNum" min="0" max="300" value="0">
             </div>
             <div class="display">
                 Formula: ΔV = βV₀ΔT
             </div>
             <div class="display">
-                Temperature: <span id="tempOutput"></span> °C <br>
-                Final Volume: <span id="volumeOutput"></span> what unit
+                Temperature: <span id="expTempValue"></span> °C <br>
+                Final Volume: <span id="expVolume"></span> cm³
             </div>
             <div class="display">
                 <h3>What's happening?</h3>
