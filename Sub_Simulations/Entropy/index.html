@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <h1>Thermal Work</h1>
+            <div id="model">
+                <div id="gas"></div>
+                <div id="piston"></div>
+            </div>
+            <div id="inputTemp">
+                <label>Heat Input</label>
+                <input type="range" id="workInput" min="0" max="300" value="0">
+                <input type="number" id="workInputNum" min="0" max="300" value="0">
+            </div>
+            <div class="display">
+                Formula: W = PΔV
+            </div>
+            <div class="display">
+                Heat Input: <span id="workInputValue"></span> <br>
+                Work Done: <span id="workValue"></span> J
+            </div>
+            <div class="display">
+                <h3>What's happening?</h3>
+                <p>
+                    Think of the gas inside as a bunch of <b>tiny, bouncy super-balls</b>. When you add heat, 
+                    those balls start zooming around <i>way faster</i> and slamming into the piston!
+                    Because the piston can move, the gas actually <b>pushes it up</b>. That "push" is the gas doing <em>Thermal Work</em>. 
+                    It's like the heat is giving the gas muscles to lift a heavy weight!
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
