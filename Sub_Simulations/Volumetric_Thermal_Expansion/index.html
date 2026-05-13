@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Volumetric Thermal Expansion</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
     <body>
-        <div>
-            <h1>Volumetric Thermal Expansion</h1>
-            <div id="model"></div>
-            <div id="inputTemp">
-                <label>Temperature (°C)</label>
-                <input type="range" id="expTemp" min="0" max="300" value="0">
-                <input type="number" id="expTempNum" min="0" max="300" value="0">
+        <div id="container">
+            <div id="topSection">
+                <div id="modelSection"></div>
+                <div id="inputAndOutputSection">
+                    <div id="input">
+                        <label>Temperature (°C)</label>
+                        <input type="range" id="expTemp" min="0" max="300" value="0">
+                        <input type="number" id="expTempNum" min="0" max="300" value="0">
+                    </div>
+                    <div id="output">
+                        Formula: ΔV = βV₀ΔT <br>
+                        Temperature: <span id="expTempValue"></span> °C <br>
+                        Final Volume: <span id="expVolume"></span> cm³
+                    </div>
+                </div>
             </div>
-            <div class="display">
-                Formula: ΔV = βV₀ΔT
-            </div>
-            <div class="display">
-                Temperature: <span id="expTempValue"></span> °C <br>
-                Final Volume: <span id="expVolume"></span> cm³
-            </div>
-            <div class="display">
+            <div id="bottomSection">
                 <h3>What's happening?</h3>
                 <p>
-                    When things get hot, the tiny atoms inside start <b></b>dancing and pushing</p> each other apart!
-                    In <em>Volumetric Expansion</em>, your object doesn't just get longer, it grows in 3D (width, height, and depth).
+                    When things get hot, the tiny atoms inside start <b>dancing and pushing</b> each other apart! <br>
+                    In <em>Volumetric Expansion</em>, your object doesn't just get longer, it grows in 3D (width, height, and depth). <br>
                     It's like the object is taking a deep breath and getting <b>super-sized</b>!
                 </p>
             </div>

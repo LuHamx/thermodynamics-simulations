@@ -1,3 +1,4 @@
+/*
 * {
     padding: 0px;
     margin: 0px;
@@ -9,22 +10,31 @@ body {
     font-family: 'Lucida Grande';
 }
 
+.opening {
+    color: #ffffff;
+}
+
 header {
-    height: 100vh;
-    width: 100vw;
+    height: 200vh;
+    width: 200vw;
     background-color: #161b33;
 }
 
 .navbar {
     position: absolute;
-    padding: 30px;
+    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100px;
+    width: 200px;
     box-sizing: border-box;
 }
 
+.navbar .logo {
+    font-display: middle;
+    font-size: 10;
+    font-weight: bold;
+}
 .navbar a {
     color: #ffffff;
 }
@@ -34,27 +44,41 @@ header {
 }
 
 .navbar .nav_links ul li {
-    margin: 20px;
+    margin: 0 25px;
 }
 
 .navbar .nav_links ul li.active a {
     color: #bfb8b8;
     font-weight: 600;
 }
+
 .navbar .menu {
     display: none;
     position: absolute;
-    top: 20px;
-    width: 20px;
+    top: 50px;
+    width: 50px;
 }
 
 @media screen and (max-width: 900px) {
-    .navbar .menu {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .fa-regular .fa-bars {
         display: block;
     }
     
     .nav_links {
+        position: absolute;
         display: none;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100vh; 
+    }
+
+    .nav_links ul {
+        display: flex;
+        flex-direction: column;
     }
 }
-
+*/

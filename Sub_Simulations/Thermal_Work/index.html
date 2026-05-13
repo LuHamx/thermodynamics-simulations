@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Thermal Work</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
     <body>
-        <div>
-            <h1>Thermal Work</h1>
-            <div id="model">
-                <div id="gas"></div>
-                <div id="piston"></div>
+        <div id="container">
+            <div id="topSection">
+                <div id="modelSection">
+                    <div id="gas"></div>
+                    <div id="piston"></div>
+                </div>
+                <div id="inputAndOutputSection">
+                    <div id="input">
+                        <label>Heat Input</label>
+                        <input type="range" id="workInput" min="0" max="300" value="0">
+                        <input type="number" id="workInputNum" min="0" max="300" value="0"> 
+                    </div>
+                    <div id="output">
+                        Formula: W = PΔV <br>
+                        Heat Input: <span id="workInputValue"></span> <br>
+                        Work Done: <span id="workValue"></span> J
+                    </div>
+                </div>
             </div>
-            <div id="inputTemp">
-                <label>Heat Input</label>
-                <input type="range" id="workInput" min="0" max="300" value="0">
-                <input type="number" id="workInputNum" min="0" max="300" value="0">
-            </div>
-            <div class="display">
-                Formula: W = PΔV
-            </div>
-            <div class="display">
-                Heat Input: <span id="workInputValue"></span> <br>
-                Work Done: <span id="workValue"></span> J
-            </div>
-            <div class="display">
+            <div id="bottomSection">
                 <h3>What's happening?</h3>
                 <p>
-                    Think of the gas inside as a bunch of <b>tiny, bouncy super-balls</b>. When you add heat, 
-                    those balls start zooming around <i>way faster</i> and slamming into the piston!
-                    Because the piston can move, the gas actually <b>pushes it up</b>. That "push" is the gas doing <em>Thermal Work</em>. 
+                    Think of the gas inside as a bunch of <b>tiny, bouncy super-balls</b>. When you add heat, <br>
+                    those balls start zooming around <i>way faster</i> and slamming into the piston! <br>
+                    Because the piston can move, the gas actually <b>pushes it up</b>. That "push" is the gas doing <em>Thermal Work</em>. <br>
                     It's like the heat is giving the gas muscles to lift a heavy weight!
                 </p>
             </div>

@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Entropy</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
     <body>
-        <div>
-            <h1>Thermal Work</h1>
-            <div id="model">
-                <div id="gas"></div>
-                <div id="piston"></div>
+        <div id="container">
+            <div id="topSection">
+                <div id="modelSection"></div>
+                <div id="inputAndOutputSection">
+                    <div id="input">
+                        <label>Temperature</label>
+                        <input type="range" id="entropyTemp" min="0" max="300" value="0">
+                        <input type="number" id="entropyTempNum" min="0" max="300" value="0">
+                    </div>
+                    <div id="output">
+                        Formula: ΔS = Q / T <br>
+                        Temperature: <span id="entropyTempValue"></span> °C <br>
+                        Entropy Level: <span id="entropyValue"></span>
+                    </div>
+                </div>
             </div>
-            <div id="inputTemp">
-                <label>Heat Input</label>
-                <input type="range" id="workInput" min="0" max="300" value="0">
-                <input type="number" id="workInputNum" min="0" max="300" value="0">
-            </div>
-            <div class="display">
-                Formula: W = PΔV
-            </div>
-            <div class="display">
-                Heat Input: <span id="workInputValue"></span> <br>
-                Work Done: <span id="workValue"></span> J
-            </div>
-            <div class="display">
+            <div id="bottomSection">
                 <h3>What's happening?</h3>
                 <p>
-                    Think of the gas inside as a bunch of <b>tiny, bouncy super-balls</b>. When you add heat, 
-                    those balls start zooming around <i>way faster</i> and slamming into the piston!
-                    Because the piston can move, the gas actually <b>pushes it up</b>. That "push" is the gas doing <em>Thermal Work</em>. 
-                    It's like the heat is giving the gas muscles to lift a heavy weight!
+                    Imagine a perfectly clean room where every toy is neatly lined up. <br>
+                    Now imagine a bunch of hyper kids running around throwing everything everywhere! <br>
+                    That's kind of what <em>Entropy</em> is, the particles become more <i>random and disorganized</i> as temperature increases. <br>
+                    When heat is added, the particles gain energy, move more wildly, and spread out in many different directions. <br>
+                    Higher entropy means the system becomes more chaotic and less ordered over time!
                 </p>
             </div>
         </div>

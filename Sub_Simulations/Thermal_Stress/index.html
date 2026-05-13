@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Thermal Stress</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
     <body>
-        <div>
-            <h1>Thermal Stress</h1>
-            <div id="model">
-                <div class="wall"></div>
-                <div id="rod"></div>
-                <div class="wall"></div>
+        <div id="container">
+            <div id="topSection">
+                <div id="modelSection">
+                    <div class="wall"></div>
+                    <div id="rod"></div>
+                    <div class="wall"></div>
+                </div>
+                <div id="inputAndOutputSection">
+                    <div id="input">
+                        <label>Temperature (°C)</label>
+                        <input type="range" id="stressTemp" min="0" max="300" value="0">
+                        <input type="number" id="stressTempNum" min="0" max="300" value="0">
+                    </div>
+                    <div id="output">
+                        Formula: σ = EαΔT <br>
+                        ΔT: <span id="stressTempValue"></span> °C <br>
+                        Stress: <span id="stressValue"></span> MPa
+                    </div>
+                </div>
             </div>
-            <div id="inputTemp">
-                <label>Temperature (°C)</label>
-                <input type="range" id="stressTemp" min="0" max="300" value="0">
-                <input type="number" id="stressTempNum" min="0" max="300" value="0">
-            </div>
-            <div class="display">
-                Formula: σ = EαΔT
-            </div>
-            <div class="display">
-                ΔT: <span id="stressTempValue"></span> °C <br>
-                Stress: <span id="stressValue"></span> MPa
-            </div>
-            <div class="display">
+            <div id="bottomSection">
                 <h3>What's happening?</h3>
                 <p>
-                    Imagine you're trying to stretch out your arms, but you're trapped in a tiny <b>metal box</b>.
-                    You want to grow, but the walls say "NO!" That "pushing" feeling is <em>Thermal Stress</em>.
-                    When an object gets hot and wants to expand, but something (like a frame or bolts) holds it back, 
+                    Imagine you're trying to stretch out your arms, but you're trapped in a tiny <b>metal box</b>. <br>
+                    You want to grow, but the walls say "NO!" That "pushing" feeling is <em>Thermal Stress</em>. <br>
+                    When an object gets hot and wants to expand, but something (like a frame or bolts) holds it back, <br> 
                     the object builds up huge pressure inside. If it gets too hot, it might even <b>bend or snap</b>!
                 </p>
             </div>
