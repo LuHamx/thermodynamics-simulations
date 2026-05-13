@@ -1,6 +1,60 @@
-.main{
+* {
+    padding: 0px;
     margin: 0px;
-    padding: 12px;
-    font-family: "Lucida Grande";
-    font-size: medium;
+    text-decoration: none;
+    list-style-type: none;
 }
+
+body {
+    font-family: 'Lucida Grande';
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-color: #161b33;
+}
+
+.navbar {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.navbar .nav_links ul {
+    display: flex;
+}
+
+.navbar .nav_links ul li {
+    margin: 20px;
+}
+
+.navbar .nav_links ul li.active a {
+    color: #bfb8b8;
+    font-weight: 600;
+}
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar .menu {
+        display: block;
+    }
+    
+    .nav_links {
+        display: none;
+    }
+}
+
