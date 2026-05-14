@@ -1,4 +1,4 @@
-
+/*
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -55,4 +55,93 @@ body {
 #bottomSection {
     border-top: 2px solid #eee;
     padding-top: 15px;
+}
+*/
+body {
+    margin: 0;
+    padding: 30px;
+
+    background-color: #1f1f1f;
+    color: white;
+
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+#topSection {
+    display: flex;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+#modelSection {
+    flex: 1;
+
+    height: 450px;
+
+    border: 2px solid white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2b2b2b;
+}
+
+#cube {
+    width: 140px;
+    height: 140px;
+
+    background-color: steelblue;
+
+    transition:
+        width 0.2s ease,
+        height 0.2s ease,
+        background-color 0.2s ease;
+}
+
+#inputAndOutputSection {
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+#input,
+#output,
+#bottomSection {
+    padding: 20px;
+
+    border: 2px solid white;
+
+    background-color: #2b2b2b;
+}
+
+input[type="range"],
+input[type="number"] {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+#bottomSection {
+    margin-top: 30px;
+
+    line-height: 1.7;
 }

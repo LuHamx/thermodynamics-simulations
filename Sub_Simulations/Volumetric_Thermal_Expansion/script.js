@@ -81,6 +81,7 @@ numBox.addEventListener("input", function() {
     calculate(numBox.value);
 });
 */
+/*
 const beta = 0.000036;
 const V0 = 1000;
 const T0 = 0;
@@ -121,3 +122,71 @@ numBox.addEventListener("input", function() {
 });
 
 calculate(slider.value);
+*/
+const expTemp = document.getElementById("expTemp");
+const expTempNum = document.getElementById("expTempNum");
+
+const expTempValue = document.getElementById("expTempValue");
+const expVolume = document.getElementById("expVolume");
+
+const cube = document.getElementById("cube");
+
+const V0 = 1000;
+const beta = 0.000036;
+
+const baseSize = 140;
+
+function calculate(tempValue) {
+
+    const temp = parseFloat(tempValue) || 0;
+
+    expTemp.value = temp;
+    expTempNum.value = temp;
+
+    expTempValue.textContent = temp;
+
+    const V_final =
+        V0 * (1 + (beta * temp));
+
+    expVolume.textContent =
+        V_final.toFixed(2);
+
+    /*
+        REALISTIC scaling is too tiny visually.
+
+        So we exaggerate the visual growth
+        to make expansion noticeable.
+    */
+
+    const visualScale =
+        1 + (temp / 300) * 0.8;
+
+    const newSize =
+        baseSize * visualScale;
+
+    cube.style.width =
+        `${newSize}px`;
+
+    cube.style.height =
+        `${newSize}px`;
+
+    const red =
+        70 + Math.floor(temp / 2);
+
+    cube.style.backgroundColor =
+        `rgb(${red}, 120, 255)`;
+}
+
+expTemp.addEventListener("input", () => {
+
+    calculate(expTemp.value);
+
+});
+
+expTempNum.addEventListener("input", () => {
+
+    calculate(expTempNum.value);
+
+});
+
+calculate(0);
