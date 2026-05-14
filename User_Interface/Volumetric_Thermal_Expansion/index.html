@@ -1,0 +1,134 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Volumetric Thermal Expansion</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="topSection">
+                <div id="modelSection">
+                    <div id="cube"></div>
+                </div>
+                <div id="inputAndOutputSection">
+                    <div id="input">
+                        <label>Temperature (°C)</label>
+                        <input type="range" id="expTemp" min="0" max="300" value="0">
+                        <input type="number" id="expTempNum" min="0" max="300" value="0">
+                    </div>
+                    <div id="output">
+                        Formula: ΔV = βV₀ΔT <br>
+                        Temperature: <span id="expTempValue"></span> °C <br>
+                        Final Volume: <span id="expVolume"></span> cm³
+                    </div>
+                </div>
+            </div>
+            <div id="bottomSection">
+                <h3>What's happening?</h3>
+                <p>
+                    When things get hot, the tiny atoms inside start <b>dancing and pushing</b> each other apart! <br>
+                    In <em>Volumetric Expansion</em>, your object doesn't just get longer, it grows in 3D (width, height, and depth). <br>
+                    It's like the object is taking a deep breath and getting <b>super-sized</b>!
+                </p>
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Volumetric Thermal Expansion</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Volumetric Thermal Expansion</h1>
+
+        <div id="topSection">
+
+            <div id="modelSection">
+                <div id="cube"></div>
+            </div>
+
+            <div id="inputAndOutputSection">
+
+                <div id="input">
+
+                    <label for="expTemp">
+                        Temperature (°C)
+                    </label>
+
+                    <input
+                        type="range"
+                        id="expTemp"
+                        min="0"
+                        max="700"
+                        value="0"
+                    >
+
+                    <input
+                        type="number"
+                        id="expTempNum"
+                        min="0"
+                        max="700"
+                        value="0"
+                    >
+
+                </div>
+
+                <div id="output">
+
+                    <p>
+                        Formula: ΔV = βV₀ΔT
+                    </p>
+
+                    <p>
+                        Temperature:
+                        <span id="expTempValue">0</span> °C
+                    </p>
+
+                    <p>
+                        Final Volume:
+                        <span id="expVolume">1000</span> cm³
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="bottomSection">
+
+            <h3>What's happening?</h3>
+
+            <p>
+                When things get hot, the tiny atoms inside start
+                <b>dancing and pushing</b> each other apart!
+                <br><br>
+
+                In <em>Volumetric Expansion</em>,
+                your object doesn't just get longer,
+                it grows in 3D (width, height, and depth).
+                <br><br>
+
+                It's like the object is taking a deep breath
+                and getting <b>super-sized</b>!
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
