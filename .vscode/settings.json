@@ -1,3 +1,4 @@
 {
-    "terminal.integrated.initialHintCopilotCli": true
+    "terminal.integrated.initialHintCopilotCli": true,
+    "chat.disableAIFeatures": true
 }
