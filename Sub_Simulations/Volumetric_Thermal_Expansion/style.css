@@ -1,44 +1,58 @@
-/*
-*{ 
-    padding: 0;
-    margin: 0;
-    font-fam   
-}
-
- 
-
 
 body {
-    background-color: #161b33;
-   
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
 }
 
 #container {
-
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 #topSection {
-
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
 }
 
 #modelSection {
+    flex: 1;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeaea;
+    border-radius: 6px;
+}
 
+#cube {
+    background: #e74c3c;
+    border: 2px solid #c0392b;
+    box-shadow: 5px 5px 0px #b03a2e;
+    transition: width 0.05s ease, height 0.05s ease;
 }
 
 #inputAndOutputSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+#input, #output {
+    padding: 15px;
+    background: #fdfefe;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
 }
 
 #bottomSection {
-
+    border-top: 2px solid #eee;
+    padding-top: 15px;
 }
-
-wtf do i do here,
-iike what do we use, goddeym i dont like the design part, just structure
-me not very creative
-alright carry me here, ill modify what u make,
-or nvm ill test some shi later
-
-ill try some js
-or fix all htmls, ill do that
-*/
