@@ -1,54 +1,34 @@
-<!--
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Volumetric Thermal Expansion</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="container">
-            <div id="topSection">
-                <div id="modelSection">
-                    <div id="cube"></div>
-                </div>
-                <div id="inputAndOutputSection">
-                    <div id="input">
-                        <label>Temperature (°C)</label>
-                        <input type="range" id="expTemp" min="0" max="300" value="0">
-                        <input type="number" id="expTempNum" min="0" max="300" value="0">
-                    </div>
-                    <div id="output">
-                        Formula: ΔV = βV₀ΔT <br>
-                        Temperature: <span id="expTempValue"></span> °C <br>
-                        Final Volume: <span id="expVolume"></span> cm³
-                    </div>
-                </div>
-            </div>
-            <div id="bottomSection">
-                <h3>What's happening?</h3>
-                <p>
-                    When things get hot, the tiny atoms inside start <b>dancing and pushing</b> each other apart! <br>
-                    In <em>Volumetric Expansion</em>, your object doesn't just get longer, it grows in 3D (width, height, and depth). <br>
-                    It's like the object is taking a deep breath and getting <b>super-sized</b>!
-                </p>
-            </div>
-        </div>
-        <script src="script.js" defer></script>
-    </body>
-</html>
--->
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Volumetric Thermal Expansion</title>
-
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <div class="main">
+        <nav class="nav-bar">
+            <input type="checkbox" id="check">
+                <label for="check" class="check-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+        <ul>
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="../Volumetric_Thermal_Expansion/index.html">Volumetric Thermal Expansion</a></li>
+            <li><a href="../Thermal_Stress/index.html">Thermal Stress</a></li>
+            <li><a href="../Thermal_Work/index.html">Thermal Work</a></li>
+            <li><a href="../Entropy/index.html">Entropy</a></li>
+        </ul>
+        </nav>
+    </div>
+
 
     <div id="container">
 
@@ -129,6 +109,5 @@
         </div>
 
     </div>
-
 </body>
 </html>
