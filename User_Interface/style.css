@@ -146,15 +146,6 @@ ul li:first-child a {
     }
 
     .title h1 {
-        /*
-        position: relative;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        font-size: 250%;
-        text-align: center;
-        */
-
         width: max-content;         
         white-space: nowrap;        
         position: absolute;
