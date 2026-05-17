@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Thermal Stress</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="../stress.js" defer></script>
+        <script src="script.js" defer></script>
     </head>
-    
+
     <body>
     <div class="main">
         <nav class="nav-bar">
@@ -18,7 +18,6 @@
                     <span></span>
                     <span></span>
                 </label>
-
         <ul>
             <li class="active"><a href="../index.html">Home</a></li>
             <li><a href="../Volumetric_Thermal_Expansion/index.html">Volumetric Thermal Expansion</a></li>
@@ -28,82 +27,50 @@
         </ul>
         </nav>
     </div>
-
-
     <div id="container">
-
         <h1>Thermal Stress</h1>
-
         <div id="topSection">
-
             <div id="modelSection">
-                <div id="wall"></div>
-                <div id="rod"></div>
+                <div id="lWall"></div>
+                <div id="rod">
+                    <div id="crack"></div>
+                </div>
+                <div id="rWall"></div>
             </div>
-
             <div id="inputAndOutputSection">
-
                 <div id="input">
-
-                    <label for="expTemp">
-                        Temperature (°C)
-                    </label>
-
+                    <label for="expTemp">Temperature (°C)</label>
                     <input
-                        type="range"
-                        id="stressTemp"
-                        min="0"
-                        max="300"
-                        value="0"
+                        type="range" id="stressTemp"
+                        min="0" max="700" value="0"
                     >
-
                     <input
-                        type="number"
-                        id="stressTempNum"
-                        min="0"
-                        max="300"
-                        value="0"
+                        type="number" id="stressTempNum"
+                        min="0" max="700" value="0"
                     >
-
                 </div>
-
                 <div id="output">
-
-                    <p>
-                        Formula: σ = EαΔT
-                    </p>
-
-                    <p>
+                        Formula: σ = EαΔT <br>
                         Temperature:
-                        <span id="stressTempValue">0</span> °C
-                    </p>
-
-                    <p>
-                        Final Volume:
-                        <span id="expVolume">1000</span> cm³
-                    </p>
-
+                        <span id="stressTempValue">0</span> °C <br>
+                        Stress: 
+                        <span id="stressValue"></span> MPa
                 </div>
-
             </div>
-
         </div>
-
             <div id="bottomSection">
-
                 <h3>What's happening?</h3>
-
                 <p>
-                    Imagine you're trying to stretch out your arms, but you're trapped in a tiny <b>metal box</b>. <br>
-                    You want to grow, but the walls say "NO!" That "pushing" feeling is <em>Thermal Stress</em>. 
-                    
-                    <br><br>
-                    When an object gets hot and wants to expand, but something (like a frame or bolts) holds it back, <br> 
-                    the object builds up huge pressure inside. If it gets too hot, it might even <b>bend or snap</b>!
+                    Imagine you're trying to stretch out your arms, 
+                    but you're trapped in a tiny <b>metal box</b>. <br>
+                    You want to grow, but the walls say "NO!" 
+                    That "pushing" feeling is <em>Thermal Stress</em>. <br>
+                    When an object gets hot and wants to expand, 
+                    but something (like a frame or bolts) holds it back, <br> 
+                    the object builds up huge pressure inside. 
+                    If it gets too hot, it might even <b>bend or snap</b>!
                 </p>
-
             </div>
-
         </div>
     </body>
 </html>
