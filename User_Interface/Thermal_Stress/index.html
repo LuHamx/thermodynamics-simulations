@@ -6,9 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Thermal Stress</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
     </head>
-
     <body>
     <div class="main">
         <nav class="nav-bar">
@@ -40,21 +38,13 @@
             <div id="inputAndOutputSection">
                 <div id="input">
                     <label for="expTemp">Temperature (°C)</label>
-                    <input
-                        type="range" id="stressTemp"
-                        min="0" max="700" value="0"
-                    >
-                    <input
-                        type="number" id="stressTempNum"
-                        min="0" max="700" value="0"
-                    >
+                    <input type="range" id="stressTemp" min="0" max="700" value="0">
+                    <input type="number" id="stressTempNum" min="0" max="700" value="0">
                 </div>
                 <div id="output">
                         Formula: σ = EαΔT <br>
-                        Temperature:
-                        <span id="stressTempValue">0</span> °C <br>
-                        Stress: 
-                        <span id="stressValue"></span> MPa
+                        Temperature: <span id="stressTempValue">0</span> °C <br>
+                        Stress:  <span id="stressValue"></span> MPa
                 </div>
             </div>
         </div>
@@ -72,5 +62,6 @@
                 </p>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-const entropyTempSlider = document.getElementById("expTemp");
+const entropyTempSlider = document.getElementById("entropyTemp");
 const entropyTempNum = document.getElementById("entropyTempNum");
 
 const entropyTempValue = document.getElementById("entropyTempValue");
