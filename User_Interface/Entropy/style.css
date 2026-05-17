@@ -90,6 +90,27 @@ h1 {
     margin-bottom: 30px;
 }
 
+#particleBackground {
+    position: absolute;
+    overflow: hidden;
+    width: 30%;
+    height: 430px;
+    background-color: #fdffe0;
+    border: 2px solid #ffff;
+}
+
+.particle {
+    width: 10px;
+    height: 10px;
+    background-color: #57f4ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: background-color 0.15s ease;
+}
+
 #topSection {
     display: flex;
     gap: 30px;
@@ -105,17 +126,6 @@ h1 {
     align-items: center;
     background-color: #2b2b2b;
 }
- /*
-#cube {
-    width: 140px;
-    height: 140px;
-    background-color: steelblue;
-    transition:
-        width 0.2s ease,
-        height 0.2s ease,
-        background-color 0.2s ease;
-}
-*/
 
 #inputAndOutputSection {
     width: 320px;
