@@ -2,25 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Volumetric Thermal Expansion</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Volumetric Thermal Expansion</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+            <span></span><span></span><span></span>
+        </label>
+
         <div id="master">
-            <input type="checkbox" id="check">
-            <label for="check" class="check-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <div class="main">
+            <aside class="main">
                 <h2 id="menu-title">Simulations</h2>
                 <nav class="nav-bar">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li class="active"><a href="../Volumetric_Thermal_Expansion/index.html">Volumetric Thermal Expansion</a></li>
+                        <li class="active"><a href="#">Volumetric Thermal Expansion</a></li>
                         <li><a href="../Thermal_Stress/index.html">Thermal Stress</a></li>
                         <li><a href="../Thermal_Work/index.html">Thermal Work</a></li>
                         <li><a href="../Entropy/index.html">Entropy</a></li>
@@ -28,29 +26,34 @@
                 </nav>
                 <div id="menu-footer">
                     <h3>About</h3>
-                    <p>Contact: Buison for inquiries...</p>
+                    <p>Contact: Buison, Ching</p>
                 </div>
-            </div>
-            <div id="container">
+            </aside>
+
+            <main id="container">
                 <h1>Volumetric Thermal Expansion</h1>
+
                 <div id="topSection">
                     <div id="modelSection">
                         <div id="cube"></div>
                     </div>
+
                     <div id="inputAndOutputSection">
-                        <div id="input">
-                            <label for="expTemp">Temperature (°C)</label>
+                        <section id="input">
+                            <label for="expTemp">Temperature: <span id="tempDisplay">0</span>(°C)</label>
                             <input type="range" id="expTemp" min="0" max="700" value="0">
                             <input type="number" id="expTempNum" min="0" max="700" value="0">
-                        </div>
-                        <div id="output">
-                            Formula: ΔV = βV₀ΔT <br>
-                            Temperature: <span id="expTempValue">0</span> °C <br>
-                            Final Volume: <span id="expVolume">1000</span> cm³
-                        </div>
+                        </section>
+                        
+                        <section id="output">
+                            <p><strong>Formula:</strong> ΔV = βV₀ΔT</p>
+                            <p>Final Volume: <span id="expVolume">1000</span> cm³</p>
+                        </section>
+                        <button id="resetBtn">Reset Simulation</button>
                     </div>
                 </div>
-                <div id="bottomSection">
+
+                <section id="bottomSection">
                     <h3>What's happening?</h3>
                     <p>
                         When things get hot, the tiny atoms inside start
@@ -61,8 +64,8 @@
                         It's like the object is taking a deep breath
                         and getting <b>super-sized</b>!
                     </p>
-                </div>
-            </div>
+                </section>
+            </main>
         </div>
         <script src="script.js"></script>
     </body>
